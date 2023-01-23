@@ -18,6 +18,8 @@ public class PlaylistTester {
         Playlist jams = new Playlist();
         System.out.println("Initializing playlist...");
         System.out.println("Adding songs to the playlist...");
+        Song zero = new Song("Atom Heart Mother", "Pink Floyd", "23:44");
+        jams.addSong(zero);
         Song one = new Song("Long Time", "Playboi Carti", "2:43");
         jams.addSong(one);
         System.out.println("Added \"Long Time\" by Playboi Carti (2:43)");
