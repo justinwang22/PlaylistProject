@@ -1,0 +1,43 @@
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+There's some good stuff in here, Justin! Some comments:
+
+1. I couldn't tell how the evolution of the project went because you 
+   didn't have git set up until after the project was all done. You
+   should have taken care of that sooner.
+
+2. You didn't have a .gitignore file in there to ignore the .ctxt and
+   .class files created. I added one there for you.
+
+3. You set song duration as a string like I did, and decided to just
+   take the first character as a number, assuming that all songs would
+   only have a single digit for their minutes. That doesn't work if the
+   song lasts longer, such as Pink Floy's 23:88 minute song "Atom Heart
+   Mother." You get an error like this:
+
+        Printing total playlist duration...
+
+        Exception in thread "main" java.lang.NumberFormatException: For input string: ":44"
+            at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+            at java.base/java.lang.Integer.parseInt(Integer.java:652)
+            at java.base/java.lang.Integer.parseInt(Integer.java:770)
+            at Playlist.getTotal(Playlist.java:71)
+            at PlaylistTester.main(PlaylistTester.java:58)
+
+4. Also, make sure you put your @author and @version information on all
+   the files you write--that's important, too, for tracking who wrote
+   a file.
+
+Overall your project works decently (with exception of duration issue 
+there). During this second semester, you can work on fixing some of 
+the detail work in writing your code.
+
+:)
+
+SCORE: 19/20
+
+*/
+
